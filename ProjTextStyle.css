@@ -1,0 +1,60 @@
+body {
+    background: rgb(220, 193, 213); 
+    font-family: monospace;
+    margin: 0;
+    padding-top: 60px;
+}
+h3 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 25px 70px 0px;
+    color: rgb(93, 53, 146);
+    text-align: center;
+    font-size: 50px;
+    text-shadow: 2px 2px 5px white;
+}
+h4 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 0 70px 0;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+h5 {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 5px 70px 0px;
+    color: rgb(93, 53, 146);
+    text-align: center;
+    font-size: 28px;
+}
+p { 
+    padding: 0;
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(93, 53, 146);
+}
+p.end { 
+    padding-bottom: 20px;
+}
+
+.box {
+    background-color: rgb(93, 53, 146);
+    padding: 1px 30px 20px;
+}
+
+
+ul.custom-bul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    padding: 0; margin-left: 30px;
+    list-style-position: inside;
+    line-height: 1;
+}
+
+ul.custom-bul li{
+    color: white;
+    font-size: 18px;
+    margin-bottom: 0;
+    list-style-type: square;
+    font-family: 'Courier New', Courier, monospace;
+}

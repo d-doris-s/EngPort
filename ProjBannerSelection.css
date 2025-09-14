@@ -1,0 +1,76 @@
+.proj-banner {
+    background-color: rgb(199, 171, 212);
+    color: rgb(105, 82, 157);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 8px 15px;
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 22px;
+}
+.banner-btn {
+    display: flex;
+    gap: 15px;
+    top: 10px; 
+    right: 0;
+    padding: 8px 20px;
+    align-items: right;
+    justify-content: right;
+}
+.banner-btn button,
+.banner-btn a
+.banner-dropdown > button {
+    background-color: rgb(105, 82, 157);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: monospace;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.banner-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    min-width: 200px;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 8px 12px;
+    color: rgb(93, 53, 146);
+    text-decoration: none;
+    font-family: monospace;
+    font-size: 16px;
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(105, 82, 157);
+    color: white;
+    border-radius: 10px;
+
+}
+
+.banner-dropdown:hover .dropdown-content {
+    display: block;
+}

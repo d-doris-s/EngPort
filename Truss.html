@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Phone Mount</title>
+        <link rel="stylesheet" href="Banner&body.css">
+        <link rel="stylesheet" href="ProjTextStyle.css">
+        <link rel="stylesheet" href="VerticalPresent.css">
+        <link rel="stylesheet" href="ArrowToNext.css">
+        <link rel="stylesheet" href="ProjBannerSelection.css">
+
+        <style>
+            .center {
+                display: block;
+                width: 100%;
+                height: auto;
+                margin: auto;
+                max-width: 900px;
+            }
+
+            .centerimg1 {
+                display: block;
+                max-width: 900px;
+                height: auto;
+                margin: auto;
+                padding: 40px 40px 0;
+            }
+
+            @media (max-width: 900px) {
+                .center {
+                    flex: 1 1 100%; 
+                    max-width: 550px;
+                }
+                .centerimg1 {flex: 1 1 100%; 
+                    max-width: 500px;}
+            }
+
+        </style>
+    </head> 
+
+    <body>
+        <div class="proj-banner">
+            <span>D.S. Portfolio</span>
+            <div class="banner-btn">
+                <button onclick="window.location.href='index.html'">HOME</button>
+             
+                <div class="banner-dropdown">
+                    <button>PROJECTS &#9660;</button>
+                    <div class="dropdown-content">
+                        <a href="PhoneMount.html">Motion-Tracking Phone Holder</a>
+                        <a href="LineCar.html">Line-Following Car</a>
+                        <a href="Truss.html">Truss Design</a>
+                        <a href="TempSensor.html">Temperature Sensor</a>
+                        <a href="SkillDev.html">Skill Development</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3>Truss Design</h3>
+
+        <img class="center" src="Trussyoo.png" alt="Acrylic Truss Picture">
+           
+        <div class="txt-wrap">
+            <p><strong>September 2024 - December 2024</strong></p>
+            <div class="center-txt">
+                <p class="end">Designed and optimized a truss structure to maximize load capacity while maintaining a budget under $300, using a MATLAB algorithm for force analysis and iterative improvement. The final design met expectations, achieving a 76.95% increase in load capacity from the initial design and supporting 1.6 kg, while also improving the load-to-cost ratio to 0.2794 oz/$ from 0.1579 oz/$ initially. Efficient material selection and cost management left one-third of the budget unused, indicating potential for further optimization. </p>
+            </div>
+        </div>
+            
+            
+        <div class="box">
+            <h4>SKILLS DEVELOPED</h4>
+            <ul class="custom-bul">
+                <li>MATLAB</li>
+                <li>Force Analysis</li>
+                <li>Optimization</li>
+                <li>Teamwork</li>
+                <li>Truss Design</li>
+                <li>Technical Documentation</li>
+                <li>Deflection Testing</li>
+
+            </ul>
+        </div>
+
+        <div class="centerimg1">
+            <img src="TrussDesignProcess.png" 
+                alt="Manual Truss Design Process Picture"
+                style="width: 100%; height: 100%;">
+        </div>
+
+        <div class="center-txt">
+            <p class="end"><strong>Manually designed and computationally tested final truss model. The diagram is labeled with member numbers (1 to 15), joint letters (A to I), applied force F, important dimensions, and the first member to buckle highlighted in red.</strong></p>
+        </div>
+
+        <div class="nav-container">
+            <a href="LineCar.html">&#10094; Previous</a>
+            <a href="TempSensor.html"> Next &#10095;</a>
+        </div>
+
+    </body>
+</html>

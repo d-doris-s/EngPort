@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Phone Mount</title>
+        <link rel="stylesheet" href="Banner&body.css">
+        <link rel="stylesheet" href="HorizPresentTall.css">
+        <link rel="stylesheet" href="ProjTextStyle.css">
+        <link rel="stylesheet" href="ArrowToNext.css">
+        <link rel="stylesheet" href="ProjBannerSelection.css">
+
+        <style>
+
+            .center-vid { 
+                display: flex;
+                height: auto;
+                margin: 10px auto 40px;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .vid {
+                width: 500px;
+                max-width: 90%;
+            }
+
+            .txt-wrap {
+                overflow-wrap: anywhere;
+                word-break: break-word;
+                white-space: normal;
+                text-align: center;
+                margin: 0 50px 0;
+            }
+
+            @media (max-width: 900px) {
+                .txt-wrap {
+                    flex: 1 1 100%; 
+                    max-width: 800px;
+                }
+            }
+
+        </style>
+    </head> 
+
+    <body>
+        <div class="proj-banner">
+            <span>D.S. Portfolio</span>
+            <div class="banner-btn">
+                <button onclick="window.location.href='index.html'">HOME</button>
+             
+                <div class="banner-dropdown">
+                    <button>PROJECTS &#9660;</button>
+                    <div class="dropdown-content">
+                        <a href="PhoneMount.html">Motion-Tracking Phone Holder</a>
+                        <a href="LineCar.html">Line-Following Car</a>
+                        <a href="Truss.html">Truss Design</a>
+                        <a href="TempSensor.html">Temperature Sensor</a>
+                        <a href="SkillDev.html">Skill Development</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <h3>Motion-Tracking Phone Holder</h3>
+
+        <div class="img-text-container">
+            <img class="center" src="PhoneMountNOBACK.png" alt="Phone Mount Picture">
+            <div class="txt-wrap">
+                <p><strong>May 2025 - August 2025</strong></p>
+                <p>This device automatically rotates to follow a moving subject. A phone can be mounted on top, while a webcam captures real-time subject position data. The data is processed through a computer vision algorithm and sent to an Arduino Uno, which controls a servo motor to adjust the rotation accordingly. I  designed the housing in SolidWorks and fabricated it with a combination of 3D-printed and laser-cut components.</p>
+                <p class="end">Inspired by ballroom dance culture, where dancers often record their performances, this prototype was developed under a self-imposed $100 budget. While the system currently tracks subjects within 6 ft with limited accuracy, it demonstrates a functional proof of concept.</p>
+            </div>
+        </div>
+ 
+        <div class="box">
+            <h4>SKILLS DEVELOPED</h4>
+            <ul class="custom-bul">
+                <li>SolidWorks</li>
+                <li>3D Printing</li>
+                <li>Laser Cutter</li>
+                <li>Gear Mechanics</li>
+                <li>Arduino Uno</li>
+                <li>Raspberry Pi</li>
+                <li>Servo Motor</li>
+                <li>Circuit</li>
+                <li>Assembly</li>
+                <li>Computer Vision</li>
+
+            </ul>
+        </div>
+
+        <h5>VIDEO DEMONSTRATION</h5>
+
+        <div class="center-vid">
+            <video class="vid" controls autoplay muted playsinline>
+                <source src="PhoneHolderDemoConverted.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div class="nav-container">
+            <a href="index.html">&#10094; Home</a>
+            <a href="LineCar.html"> Next &#10095;</a>
+        </div>
+        
+    </body>
+</html>

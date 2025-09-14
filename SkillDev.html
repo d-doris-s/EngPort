@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Phone Mount</title>
+        <link rel="stylesheet" href="Banner&body.css">
+        <link rel="stylesheet" href="ProjTextStyle.css">
+        <link rel="stylesheet" href="VerticalPresent.css">
+        <link rel="stylesheet" href="ArrowToNext.css">
+        <link rel="stylesheet" href="ProjBannerSelection.css">
+ 
+        <style>
+            h3 {
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                padding: 20px 70px 0px;
+                color: rgb(93, 53, 146);
+                text-align: center;
+                font-size: 40px;
+                text-shadow: 2px 2px 5px white;
+            }
+            h4 {
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                padding: 10px 70px 10px;
+                color: white;
+                text-align: center;
+                font-size: 22px;
+            }
+            h5 {
+                font-family: 'Courier New', Courier, monospace;
+                padding: 5px 70px 0px;
+                color: rgb(93, 53, 146);
+                text-align: center;
+                font-size: 28px;
+            }
+            p { 
+                padding: 0;
+                font-size: 18px;
+                text-align: center;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                color: rgb(93, 53, 146);
+            }
+            p.end { 
+                padding-bottom: 30px;
+            }
+
+            .box {
+                background-color: rgb(93, 53, 146);
+                padding: 1px 30px 20px;
+            }
+
+            ul.custom-bul {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+                padding: 0; margin-left: 30px;
+                list-style-position: inside;
+                line-height: 1;
+            }
+            
+            ul.custom-bul2 {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+                padding: 0; margin-left: 30px;
+                list-style-position: inside;
+                line-height: 1;
+            }
+
+            ul.custom-bul li{
+                color: white;
+                font-size: 18px;
+                margin-bottom: 0;
+                list-style-type: square;
+                font-family: 'Courier New', Courier, monospace;
+            }
+            
+            ul.custom-bul2 li{
+                color: white;
+                font-size: 18px;
+                margin-bottom: 0;
+                list-style-type: square;
+                font-family: 'Courier New', Courier, monospace;
+            }
+
+
+            .center {
+                display: block;
+                width: 700px;
+                height: auto;
+                margin: 10px auto 30px auto;
+                max-width: 500px;
+            }
+
+            .CAD {
+                display: block;
+                height: auto;
+                margin: 10px auto 30px auto;
+                max-width: 1000px;
+            }
+            @media (max-width: 900px) {
+                .CAD {
+                    flex: 1 1 100%; 
+                    max-width: 500px;
+                }
+            }
+
+            .guitar {
+                display: block;
+                width: 700px;
+                height: auto;
+                margin: 10px auto 30px auto;
+                max-width: 450px;
+            }
+            @media (max-width: 900px) {
+                .guitar {
+                    flex: 1 1 100%; 
+                    max-width: 300px;
+                }
+            }
+
+            .catapult {
+                display: block;
+                width: 700px;
+                height: auto;
+                margin: 10px auto 30px auto;
+                max-width: 450px;
+            }
+            @media (max-width: 900px) {
+                .catapult {
+                    flex: 1 1 100%; 
+                    max-width: 350px;
+                }
+            }
+
+
+        </style>
+    </head> 
+
+    <body>
+        <div class="proj-banner">
+            <span>D.S. Portfolio</span>
+            <div class="banner-btn">
+                <button onclick="window.location.href='index.html'">HOME</button>
+             
+                <div class="banner-dropdown">
+                    <button>PROJECTS &#9660;</button>
+                    <div class="dropdown-content">
+                        <a href="PhoneMount.html">Motion-Tracking Phone Holder</a>
+                        <a href="LineCar.html">Line-Following Car</a>
+                        <a href="Truss.html">Truss Design</a>
+                        <a href="TempSensor.html">Temperature Sensor</a>
+                        <a href="SkillDev.html">Skill Development</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <h3>Portfolio Website</h3>
+
+        <div class="txt-wrap">
+            <p class="end"><strong>September 2025</strong></p>
+        </div>
+            
+            
+        <div class="box">
+            <h4>SKILLS DEVELOPED</h4>
+            <ul class="custom-bul2">
+                <li>CSS</li>
+                <li>HTML</li>
+                <li>JavaScript</li>
+                <li>Web Development</li>
+                <li>Organization</li>
+                <li>Design</li>
+
+            </ul>
+        </div>
+
+        <h3>Catapult</h3>
+
+        <img class="catapult" src="CatapultNOBACK.png" alt="Catapult Picture">
+           
+        <div class="txt-wrap">
+            <p><strong>June 2025</strong></p>
+            <p class="end">Catapult made with wood and springs</p>
+
+        </div>
+            
+            
+        <div class="box">
+            <h4>SKILLS DEVELOPED</h4>
+            <ul class="custom-bul">
+                <li>NC Mill</li>
+                <li>Bandsaw</li>
+                <li>Belt Sander</li>
+                <li>Dremel</li>
+                <li>Drill</li>
+                <li>Drill Bit</li>
+                <li>Wood Glue</li>
+                <li>Screw</li>
+                <li>Fasteners</li>
+            </ul>
+        </div>
+
+        <h3>Guitar Stand</h3>
+
+        <img class="guitar" src="GuitarStandNOBACK.png" alt="Guitar Stand Picture">
+           
+        <div class="txt-wrap">
+            <p><strong>July 2025</strong></p>
+        <p class="end">Stand for half size guitars</p>
+
+        </div>
+            
+        <div class="box">
+            <h4>SKILLS DEVELOPED</h4>
+            <ul class="custom-bul">
+                <li>Bandsaw</li>
+                <li>Belt Sander</li>
+                <li>Woodworking</li>
+            </ul>
+        </div>
+
+        <h3>SolidWorks Technical Drawing</h3>
+
+        <img class="CAD" src="CADex.png" alt="CAD drawing of a cap">
+           
+        <div class="txt-wrap">
+            <p><strong>March 2025</strong></p>
+            <p class="end">Techanical drawing of a cap</p>
+
+        </div>
+            
+            
+        <div class="box">
+            <h4>SKILLS DEVELOPED</h4>
+            <ul class="custom-bul">
+                <li>SolidWorks</li>
+                <li>Technical Drawing</li>
+            </ul>
+        </div>
+
+        <div class="nav-container">
+            <a href="TempSensor.html">&#10094; Previous</a>
+            <a href="Project.html"> Home &#10095;</a>
+        </div>
+
+    </body>
+</html>

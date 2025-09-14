@@ -1,0 +1,37 @@
+.img-text-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin: 10px auto;
+    max-width: 1100px;
+}
+
+.img-text-container img.center {
+    flex: 1 1 auto;
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+}
+
+.img-text-container .txt-wrap {
+    flex: 1 1 400px;
+    max-width: 500px;
+    text-align: left; 
+}
+
+@media (max-width: 900px) {
+    .img-text-container {
+        flex-direction: column;  
+        text-align: center;
+    }
+    .img-text-container img.center {
+        max-width: 500px;
+    }
+
+    .img-text-container .txt-wrap {
+        text-align: center;
+        margin: 10px 20px;
+    }
+}

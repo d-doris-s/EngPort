@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Phone Mount</title>
+        <link rel="stylesheet" href="Banner&body.css">
+        <link rel="stylesheet" href="ProjTextStyle.css">
+        <link rel="stylesheet" href="HorizPresentTall.css">
+        <link rel="stylesheet" href="ArrowToNext.css">
+        <link rel="stylesheet" href="ProjBannerSelection.css">
+
+        <style>
+            .center {
+                display: block;
+                width: 600px;
+                height: auto;
+                margin: 10px auto 30px auto;
+            }
+
+            .centerimg1 {
+                display: block;
+                max-width: 800px;
+                height: auto;
+                margin: auto;
+                padding: 40px 40px 0;
+            }
+
+            @media (max-width: 900px) {
+                .center {
+                    flex: 1 1 100%; 
+                    max-width: 450px;
+                }
+                .centerimg1 {flex: 1 1 100%; 
+                    max-width: 500px;}
+            }
+
+
+        </style>
+    </head> 
+
+    <body>
+        <div class="proj-banner">
+            <span>D.S. Portfolio</span>
+            <div class="banner-btn">
+                <button onclick="window.location.href='index.html'">HOME</button>
+             
+                <div class="banner-dropdown">
+                    <button>PROJECTS &#9660;</button>
+                    <div class="dropdown-content">
+                        <a href="PhoneMount.html">Motion-Tracking Phone Holder</a>
+                        <a href="LineCar.html">Line-Following Car</a>
+                        <a href="Truss.html">Truss Design</a>
+                        <a href="TempSensor.html">Temperature Sensor</a>
+                        <a href="SkillDev.html">Skill Development</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <h3>Temperature Sensor</h3>
+
+        <div class="img-text-container">
+            <img class="center" src="SensorNOBACK.png" alt="Temperature Sensor Picture">
+            <div class="txt-wrap">
+                <p><strong>September 2024 - December 2024</strong></p>
+                <p class="end">This temperature sensor warns the user when the temperature is out of the desirable range from 70&deg;F to 75&deg;F. I modeled the components and designed a 9V battery holder using Onshape. The holder is 3-D printed in a vertical orientation with a zigzag infill to ensure that the arms are flexible enough for the battery to slide in while the base and walls are rigid. I programmed the Arduino for analog-to-digital conversion and component operation including the buzzer and the LED. The circuit was soldered together and battery holder was super-glued in place.</p>
+            </div>
+        </div>
+            
+            
+        <div class="box">
+            <h4>SKILLS DEVELOPED</h4>
+            <ul class="custom-bul">
+                <li>Soldering</li>
+                <li>Arduino IDE</li>
+                <li>3D printing</li>
+                <li>Onshape</li>
+                <li>Arduino Uno</li>
+                <li>Circuiting</li>
+                <li>Assembly</li>
+
+            </ul>
+        </div>
+
+        <div class="centerimg1">
+            <img src="ClosedTempSense.jpg" 
+                alt="Temperature Sensor Interior Picture"
+                style="width: 100%; height: 100%;">
+        </div>
+
+        <div class="center-txt">
+            <p><strong>Internal wiring of temperature sensor box</strong></p>
+        </div>
+
+        <div class="centerimg1">
+            <img src="CADtempSense.png" 
+                alt="Temperature Sensor Onshape Modeling"
+                style="width: 100%; height: 100%;">
+        </div>
+
+        <div class="center-txt">
+            <p class="end"><strong>Temperature sensor components modeled and assembled on Onshape</strong></p>
+        </div>
+
+
+        <div class="nav-container">
+            <a href="Truss.html">&#10094; Previous</a>
+            <a href="SkillDev.html"> Next &#10095;</a>
+        </div>
+
+    </body>
+</html>

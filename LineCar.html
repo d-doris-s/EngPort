@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Phone Mount</title>
+        <link rel="stylesheet" href="Banner&body.css">
+        <link rel="stylesheet" href="ProjTextStyle.css">
+        <link rel="stylesheet" href="HorizPresentFlat.css">
+        <link rel="stylesheet" href="ArrowToNext.css">
+        <link rel="stylesheet" href="ProjBannerSelection.css">
+
+
+        <style>
+
+            .center-vid { 
+                display: flex;
+                height: auto;
+                margin: 10px auto 40px;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .vid {
+                width: 900px;
+                max-width: 90%;
+            }
+
+            @media (max-width: 900px) {
+                .vid {
+                    flex: 1 1 100%; 
+                    max-width: 500px;
+                }
+            }
+
+
+        </style>
+    </head> 
+
+    <body>
+
+        <div class="proj-banner">
+            <span>D.S. Portfolio</span>
+            <div class="banner-btn">
+                <button onclick="window.location.href='index.html'">HOME</button>
+             
+                <div class="banner-dropdown">
+                    <button>PROJECTS &#9660;</button>
+                    <div class="dropdown-content">
+                        <a href="PhoneMount.html">Motion-Tracking Phone Holder</a>
+                        <a href="LineCar.html">Line-Following Car</a>
+                        <a href="Truss.html">Truss Design</a>
+                        <a href="TempSensor.html">Temperature Sensor</a>
+                        <a href="SkillDev.html">Skill Development</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <h3>Line-Following Car</h3>
+
+        <div class="img-text-container">
+            <img class="center" src="CarProtoNOBACK.png" alt="Car Picture">
+            <div class="txt-wrap">
+                <p><strong>January 2025 - May 2025</strong></p>
+                <p>Collaborated in a 4-person team to design and build a small (&lt; 50cm<sup>3</sup>) autonomous line-following car weighing approximately 1 kg. The chassis was constructed using laser-cut acrylic and wood, with components housed in a custom-designed enclosure modeled in Onshape. The car was powered by an Arduino Uno microcontroller, integrated with IR sensors for line detection, an ultrasonic sensor for obstacle avoidance, and DC motors for propulsion. </p>
+                <p class="end">Initial prototypes experienced wheel slippage, which was resolved by adding rubber bands to increase friction and upgrading the power supply with additional batteries to enhance motor performance. These improvements led to smoother turning and more consistent line tracking. The control system was programmed to interpret sensor data and dynamically adjust motor output, enabling the robot to follow complex paths with increased stability and accuracy.</p>
+            </div>
+        </div>
+        
+            
+            
+        <div class="box">
+            <h4>SKILLS DEVELOPED</h4>
+            <ul class="custom-bul">
+                <li>DC Motor</li>
+                <li>3D Printing</li>
+                <li>Laser Cutting</li>
+                <li>Arudino Uno</li>
+                <li>Documentation</li>
+                <li>Technical Report</li>
+                <li>Wiring</li>
+                <li>Onshape</li>
+                <li>Sensor Testing</li>
+                <li>Engineering Decisions</li>
+                <li>Manage Budget</li>
+                <li>Technical Presentation</li>
+                <li>Graphical Analysis</li>
+                <li>Teamwork</li>
+            </ul>
+        </div>
+
+        <h5>VIDEO DEMONSTRATION</h5>
+
+        <div class="center-vid">
+            <video class="vid" controls autoplay muted playsinline>
+                <source src="LineCarDemoConverted.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        
+
+        <div class="nav-container">
+            <a href="PhoneMount.html">&#10094; Previous</a>
+            <a href="Truss.html"> Next &#10095;</a>
+        </div>
+
+    </body>
+</html>

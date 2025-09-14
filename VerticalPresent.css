@@ -1,0 +1,25 @@
+.txt-wrap {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    white-space: normal;
+    text-align: center;
+    margin: 0 50px 0;
+}
+
+.center-txt {
+    display: block;
+    max-width: 1000px;
+    height: auto;
+    margin: auto;
+}
+
+@media (max-width: 900px) {
+    .txt-wrap {
+        flex: 1 1 100%; 
+        max-width: 800px;
+    }
+    .center-txt {
+        flex: 1 1 100%; 
+        max-width: 700px;
+    }
+}
