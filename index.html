@@ -11,9 +11,11 @@
     </head> 
 
     <body>
+        
         <div class="proj-banner">
             <span>D.S. Portfolio</span>
-            <div class="banner-btn">
+
+            <div class="banner-btn" id="navLinks">
                 <button onclick="window.location.href='index.html'">HOME</button>
              
                 <div class="banner-dropdown">
@@ -27,7 +29,16 @@
                     </div>
                 </div>
             </div>
+
+            <div class="menu-icon" id="menuBtn">&#9776;</div>
         </div>
+
+        <script>
+            document.getElementById("menuBtn").addEventListener("click", function() {
+                document.getElementById("navLinks").classList.toggle("show");
+            });
+        </script>
+    
 
         <h1>DORIS SIU</h1>
             <div class="top-center">
@@ -96,36 +107,38 @@
                
         <div class="text-center">
         <h4>ABOUT ME</h4>
-            <p>My name is Doris Siu, and I'm a junior ('27) studying Mechanical 
-                Engineering at Boston University with a concentration in Manufacturing. 
-                For as long as I can remember, I've always loved DIY projects 
-                and designing new inventions, sometimes to make the day-to-day life a 
-                little easier, and sometimes to make things look and feel better. 
-            </p>
-            <p> When I was 12, I built phone stands out of cardboard and 
-                cord holders out of paper. Simple, and admittedly kind of ugly, 
-                but they worked. Over the years, I kept revisiting the phone stand and
-                improving the design with new materials and styles. With each 
-                version, it became stronger, more adaptable, and prettier. I 
-                share this story because I believe it captures who I am 
-                as an engineer: someone who is always iterating, learning, and 
-                refining. 
-            </p>
-            <p>
-                Now, with access to machinery and more 
-                resilient materials, I've taken that childhood project further.
-                One of my favorite builds has been a motion-tracking phone mount 
-                that automatically follows a subject's movements. Instead of 
-                cardboard and paper, I used SolidWorks, 3D printing, laser cutting, and
-                electronics to create a durable and intricate design. 
-            </p>
-            <p>
-                 Looking ahead, I want to grow as an engineer who designs products 
-                 and improves everyday life, taking ideas from concept to reality 
-                 and refining them along the way with technical expertise,
-                 persistence, and creativity.
-            </p>
+            <div class="text-center">
+                <p>My name is Doris Siu, and I'm a junior ('27) studying Mechanical 
+                    Engineering at Boston University with a concentration in Manufacturing. 
+                    For as long as I can remember, I've always loved DIY projects 
+                    and designing new inventions, sometimes to make the day-to-day life a 
+                    little easier, and sometimes to make things look and feel better. 
+                </p>
+                <p> When I was 12, I built phone stands out of cardboard and 
+                    cord holders out of paper. Simple, and admittedly kind of ugly, 
+                    but they worked. Over the years, I kept revisiting the phone stand and
+                    improving the design with new materials and styles. With each 
+                    version, it became stronger, more adaptable, and prettier. I 
+                    share this story because I believe it captures who I am 
+                    as an engineer: someone who is always iterating, learning, and 
+                    refining. 
+                </p>
+                <p>
+                    Now, with access to machinery and more 
+                    resilient materials, I've taken that childhood project further.
+                    One of my favorite builds has been a motion-tracking phone mount 
+                    that automatically follows a subject's movements. Instead of 
+                    cardboard and paper, I used SolidWorks, 3D printing, laser cutting, and
+                    electronics to create a durable and intricate design. 
+                </p>
+                <p>
+                    Looking ahead, I want to grow as an engineer who designs products 
+                    and improves everyday life, taking ideas from concept to reality 
+                    and refining them along the way with technical expertise,
+                    persistence, and creativity.
+                </p>
             </div>
+        </div>
 
         <h4>CONTACT ME</h4>
 

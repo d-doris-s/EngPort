@@ -6,35 +6,37 @@ body {
 }
 h1 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    padding: 100px 60px 80px;
+    padding: auto;
     color: rgb(93, 53, 146);
     text-align: center;
     font-size: 120px;
     text-shadow: 5px 5px 5px white;
+    margin: 220px auto 180px;
 }
 h2 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    padding: 0px 100px 120px;
+    padding: 0px auto 120px;
     color: rgb(93, 53, 146);
     text-align: center;
     font-size: 32px;
+    margin: auto auto 110px;
 }
 h3 {
     font-family: 'Courier New', Courier, monospace; 
-    padding: 20px 70px 0px; 
+    padding: auto; 
     color: rgb(93, 53, 146); 
     text-align: center; 
     font-size: 60px; 
     text-shadow: 3px 3px 7px white;}
 h4 {
     font-family: 'Courier New', Courier, monospace; 
-    padding: 20px 70px 0px; 
+    padding: auto; 
     color: rgb(93, 53, 146); 
     text-align: center; 
     font-size: 40px; 
     text-shadow: 3px 3px 7px white;}
 p { 
-    padding: 0px 100px 10px;
+    padding: 0px 20px 10px;
     font-size: 17px;
     text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -48,7 +50,7 @@ p.end {
     display: block;
     height: auto;
     margin: 10px auto 30px auto;
-    max-width: 1000px;
+    max-width: 900px;
 }
 
 .top-center {
@@ -61,7 +63,7 @@ p.end {
 @media (max-width: 900px) {
     .text-center {
         flex: 1 1 100%; 
-        max-width: 800px;
+        max-width: 700px;
     }
     .top-center {
         flex: 1 1 100%; 

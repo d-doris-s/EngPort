@@ -138,7 +138,8 @@
     <body>
         <div class="proj-banner">
             <span>D.S. Portfolio</span>
-            <div class="banner-btn">
+
+            <div class="banner-btn" id="navLinks">
                 <button onclick="window.location.href='index.html'">HOME</button>
              
                 <div class="banner-dropdown">
@@ -152,7 +153,15 @@
                     </div>
                 </div>
             </div>
+
+            <div class="menu-icon" id="menuBtn">&#9776;</div>
         </div>
+
+        <script>
+            document.getElementById("menuBtn").addEventListener("click", function() {
+                document.getElementById("navLinks").classList.toggle("show");
+            });
+        </script>
 
         <div class="nav-container">
             <a href="TempSensor.html">&#10094; Previous</a>

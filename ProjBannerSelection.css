@@ -1,10 +1,10 @@
 .proj-banner {
-    background-color: rgb(199, 171, 212);
+    background-color: rgb(178, 178, 235);
     color: rgb(105, 82, 157);
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
-    padding: 8px 15px;
+    padding: 10px 30px;
     font-weight: bold;
     position: fixed;
     top: 0;
@@ -13,16 +13,17 @@
     z-index: 1000;
     box-sizing: border-box;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 22px;
+    font-size: 25px;
 }
+
 .banner-btn {
     display: flex;
     gap: 15px;
     top: 10px; 
     right: 0;
-    padding: 8px 20px;
-    align-items: right;
-    justify-content: right;
+    padding: 5px 20px;
+    align-items: center;
+    justify-content: flex-end;
 }
 .banner-btn button,
 .banner-btn a
@@ -33,10 +34,16 @@
     border-radius: 5px;
     text-decoration: none;
     font-family: monospace;
-    font-size: 18px;
+    font-size: 19px;
     border: none;
     cursor: pointer;
     display: inline-block;
+}
+
+.banner-dropdown > button {
+    width: 200px;
+    box-sizing: border-box;
+    text-align: center;
 }
 
 .banner-dropdown {
@@ -48,11 +55,12 @@
     display: none;
     position: absolute;
     top: 100%;
-    left: 0;
     background-color: white;
     min-width: 200px;
     z-index: 1;
     border-radius: 10px;
+    right: 0;
+    left: auto;
 }
 
 .dropdown-content a {
@@ -61,7 +69,8 @@
     color: rgb(93, 53, 146);
     text-decoration: none;
     font-family: monospace;
-    font-size: 16px;
+    font-size: 17px;
+    text-align: center;
 }
 
 .dropdown-content a:hover {
@@ -73,4 +82,42 @@
 
 .banner-dropdown:hover .dropdown-content {
     display: block;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    margin: 3.5px;
+}
+
+@media (max-width: 800px) {
+    .banner-btn {
+        display: none;              
+        flex-direction: column;    
+        background: rgb(178, 178, 235);
+        position: absolute;
+        top: 60px;   /* below banner */
+        right: 0;
+        width: 200px;
+        padding: 10px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        border-radius: 6.5px;
+    }
+
+    .banner-btn button, .banner-dropdown {
+        width: 200px;
+    }
+
+    .banner-btn.show {
+        display: flex;  
+    }
+
+    .menu-icon {
+        display: block; 
+    }
+    
+    .menu-icon:hover + #navLinks {
+        display: flex;
+    }
 }

@@ -6,22 +6,23 @@ body {
 }
 h3 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    padding: 10px 70px 0px;
+    padding: 10px auto 0px;
     color: rgb(93, 53, 146);
     text-align: center;
     font-size: 50px;
     text-shadow: 2px 2px 5px white;
+    margin: 10px 50px 70px;
 }
 h4 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    padding: 0 70px 0;
+    padding: 0 30px;
     color: white;
     text-align: center;
     font-size: 25px;
 }
 h5 {
     font-family: 'Courier New', Courier, monospace;
-    padding: 5px 70px 0px;
+    padding: auto;
     color: rgb(93, 53, 146);
     text-align: center;
     font-size: 28px;
