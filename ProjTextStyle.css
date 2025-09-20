@@ -59,3 +59,9 @@ ul.custom-bul li{
     list-style-type: square;
     font-family: 'Courier New', Courier, monospace;
 }
+
+a {
+    color: rgb(105, 82, 157);
+    text-decoration: none;
+    cursor: pointer;
+}

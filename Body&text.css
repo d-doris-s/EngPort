@@ -70,3 +70,9 @@ p.end {
         max-width: 800px;
     }
 }
+
+a {
+    color: rgb(105, 82, 157);
+    text-decoration: none;
+    cursor: pointer;
+}
