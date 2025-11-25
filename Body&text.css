@@ -69,10 +69,26 @@ p.end {
         flex: 1 1 100%; 
         max-width: 800px;
     }
+    .center-img {
+        max-width: 400px;
+        width: 100%;
+    }
 }
 
 a {
     color: rgb(105, 82, 157);
     text-decoration: none;
     cursor: pointer;
+}
+
+.center-img {
+    display: block;
+    margin: auto;
+    max-width: 600px;
+    width: 80%;
+}
+
+p.poster {
+    font-size: 20px;
+    margin-bottom: 60px;
 }
