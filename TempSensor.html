@@ -1,131 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Phone Mount</title>
-        <link rel="stylesheet" href="Banner&body.css">
-        <link rel="stylesheet" href="ProjTextStyle.css">
-        <link rel="stylesheet" href="HorizPresentTall.css">
-        <link rel="stylesheet" href="ArrowToNext.css">
-        <link rel="stylesheet" href="ProjBannerSelection.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Sensor | Doris Siu</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
 
-        <style>
-            .center {
-                display: block;
-                width: 600px;
-                height: auto;
-                margin: 10px auto 30px auto;
-            }
+<body>
 
-            .centerimg1 {
-                display: block;
-                max-width: 800px;
-                height: auto;
-                margin: auto;
-                padding: 40px 40px 0;
-            }
+    <nav class="navbar">
+        <a href="index.html" class="logo">D.S. Portfolio</a>
 
-            @media (max-width: 900px) {
-                .center {
-                    flex: 1 1 100%; 
-                    max-width: 450px;
-                }
-                .centerimg1 {flex: 1 1 100%; 
-                    max-width: 500px;}
-            }
+        <input type="checkbox" id="nav-trigger" class="menu-toggle">
+        <label for="nav-trigger" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
 
+        <div class="nav-links">
+            <a href="work.html">Experience</a>
+            <a href="project.html">Project</a>
+            <a href="index.html#about">About</a>
+            <a href="contact.html" class="nav-contact">Contact</a>
+        </div>
+    </nav>
 
-        </style>
-    </head> 
-
-    <body>
-        <div class="proj-banner">
-            <a href="index.html">D.S. Portfolio</a>
-
-            <div class="banner-btn" id="navLinks">
-                <button onclick="window.location.href='index.html'">HOME</button>
-             
-                <div class="banner-dropdown">
-                    <button>PROJECTS &#9660;</button>
-                    <div class="dropdown-content">
-                        <a href="PhoneMount.html">Motion-Tracking Phone Holder</a>
-                        <a href="LineCar.html">Line-Following Car</a>
-                        <a href="Truss.html">Truss Design</a>
-                        <a href="TempSensor.html">Temperature Sensor</a>
-                        <a href="SkillDev.html">Miscellaneous Projects</a>
-                    </div>
+    <main class="container">
+        <section class="hero-split">
+            <div class="hero-content">
+                <p class="category-tag">Embedded Systems & CAD</p>
+                <h1>Temperature Sensor</h1>
+                <p>A smart monitoring device providing audio and visual alerts when temperature drift outside the 70°F - 75°F range.</p>
+                
+                <div class="tag-cloud">
+                    <span class="tag">Arduino IDE</span>
+                    <span class="tag">Onshape</span>
+                    <span class="tag">Circuit Design</span>
+                    <span class="tag">3D Printing</span>
+                    <span class="tag">Analog-to-Digital Conversion</span>
+                    <span class="tag">Soldering</span>
+                    <span class="tag">Infill Optimization</span>
                 </div>
 
-                <button onclick="window.location.href='GraphicHome.html'">GRAPHIC DESIGN</button>
+                <div class="spec-grid">
+                    <div class="spec-item">
+                        <label>Timeline</label>
+                        <span>Sep-Dec 2024</span>
+                    </div>
+        
+                </div>
+
             </div>
+            <div class="hero-img">
+                <img src="PortPhotos/close-temp-noback.png" alt="Temperature Sensor Prototype">
+            </div>
+        </section>
 
-            <div class="menu-icon" id="menuBtn">&#9776;</div>
-        </div>
+        <section class="details">
+            <h3>Design & Iteration</h3>
+            <p>The core design challenge was the 9V battery housing. I engineered a vertical snap-fit holder using a zigzag infill pattern. This specific manufacturing choice provided the necessary compliance in the arms for battery insertion while maintaining a rigid structural base.</p>
+        </section>
 
-        <script>
-            document.getElementById("menuBtn").addEventListener("click", function() {
-                document.getElementById("navLinks").classList.toggle("show");
-            });
-        </script>
-
-        <div class="nav-container">
-            <a href="Truss.html">&#10094; Previous</a>
-            <a href="SkillDev.html"> Next &#10095;</a>
-        </div>
-
-
-
-        <h3>Temperature Sensor</h3>
-
-        <div class="img-text-container">
-            <img class="center" src="SensorNOBACK.png" alt="Temperature Sensor Picture">
-            <div class="txt-wrap">
-                <p><strong>September 2024 - December 2024</strong></p>
-                <p class="end">This temperature sensor warns the user when the temperature is out of the desirable range from 70&deg;F to 75&deg;F. I modeled the components and designed a 9V battery holder using Onshape. The holder is 3-D printed in a vertical orientation with a zigzag infill to ensure that the arms are flexible enough for the battery to slide in while the base and walls are rigid. I programmed the Arduino for analog-to-digital conversion and component operation including the buzzer and the LED. The circuit was soldered together and battery holder was super-glued in place.</p>
+        <div class="hero-split" style="padding-top: 0; margin-top: 2rem;">
+            <div class="media-wrap" style="background: #fbfbfd; padding: 1.5rem;">
+                <img src="PortPhotos/CADtempSense.png" alt="Onshape Model" style="width: 100%; border-radius: 12px;">
+                <p style="text-align: center; font-size: 0.85rem; margin-top: 10px; font-weight: 600;">Digital Assembly & Tolerancing</p>
+            </div>
+            <div class="media-wrap" style="background: #fbfbfd; padding: 1.5rem;">
+                <img src="PortPhotos/open-temp-sense.jpg" alt="Physical Interior" style="width: 100%; border-radius: 12px;">
+                <p style="text-align: center; font-size: 0.85rem; margin-top: 10px; font-weight: 600;">Internal Layout & Soldering</p>
             </div>
         </div>
-            
-            
-        <div class="box">
-            <h4>SKILLS</h4>
-            <ul class="custom-bul">
-                <li>Soldering</li>
-                <li>Arduino IDE</li>
-                <li>3D printing</li>
-                <li>Onshape</li>
-                <li>Arduino Uno</li>
-                <li>Circuiting</li>
-                <li>Assembly</li>
 
-            </ul>
-        </div>
+    </main>
 
-        <div class="centerimg1">
-            <img src="ClosedTempSense.jpg" 
-                alt="Temperature Sensor Interior Picture"
-                style="width: 100%; height: 100%;">
-        </div>
+    <footer class="nav-footer">
+        <a href="Truss.html">❮ Previous Project</a>
+        <a href="SkillDev.html">Next Project ❯</a>
+    </footer>
 
-        <div class="center-txt">
-            <p><strong>Internal wiring of temperature sensor box</strong></p>
-        </div>
-
-        <div class="centerimg1">
-            <img src="CADtempSense.png" 
-                alt="Temperature Sensor Onshape Modeling"
-                style="width: 100%; height: 100%;">
-        </div>
-
-        <div class="center-txt">
-            <p class="end"><strong>Temperature sensor components modeled and assembled on Onshape</strong></p>
-        </div>
-
-
-        <div class="nav-container">
-            <a href="Truss.html">&#10094; Previous</a>
-            <a href="SkillDev.html"> Next &#10095;</a>
-        </div>
-
-    </body>
+</body>
 </html>

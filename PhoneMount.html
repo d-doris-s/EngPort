@@ -1,144 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Phone Mount</title>
-        <link rel="stylesheet" href="HorizPresentTall.css">
-        <link rel="stylesheet" href="ProjTextStyle.css">
-        <link rel="stylesheet" href="ArrowToNext.css">
-        <link rel="stylesheet" href="ProjBannerSelection.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motion-Tracking Phone Holder | Doris Siu</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head> 
 
-        <style>
+<body>
 
-            .center-vid { 
-                display: flex;
-                height: auto;
-                margin: 10px auto 40px;
-                align-items: center;
-                justify-content: center;
-            }
+    <nav class="navbar">
+        <a href="index.html" class="logo">D.S. Portfolio</a>
+        <div class="nav-links">
+            <a href="work.html">Experience</a>
+            <a href="project.html">Project</a>
+            <a href="#about">About</a>
+        </div>
+    </nav>
 
-            .vid {
-                width: 500px;
-                max-width: 90%;
-            }
-
-            .txt-wrap {
-                overflow-wrap: anywhere;
-                word-break: break-word;
-                white-space: normal;
-                text-align: center;
-                margin: 0 50px 0;
-            }
-
-            .size-photo {
-                display: flex;
-                margin: auto;
-                padding: 30px 30px 5px 30px;
-                align-items: center;
-                justify-content: center;
-                max-width: 900px;
-                width: 100%;
-            }
-
-            @media (max-width: 900px) {
-                .txt-wrap {
-                    flex: 1 1 100%; 
-                    max-width: 800px;
-                }
-                .size-photo {
-                    max-width: 700px;
-                    width: 100%;
-                }
-            }
-
-        </style>
-    </head> 
-
-    <body>
-        <div class="proj-banner">
-            <a href="index.html">D.S. Portfolio</a>
-
-            <div class="banner-btn" id="navLinks">
-                <button onclick="window.location.href='index.html'">HOME</button>
-             
-                <div class="banner-dropdown">
-                    <button>PROJECTS &#9660;</button>
-                    <div class="dropdown-content">
-                        <a href="PhoneMount.html">Motion-Tracking Phone Holder</a>
-                        <a href="LineCar.html">Line-Following Car</a>
-                        <a href="Truss.html">Truss Design</a>
-                        <a href="TempSensor.html">Temperature Sensor</a>
-                        <a href="SkillDev.html">Miscellaneous Projects</a>
-                    </div>
+    <main class="container">
+        <section class="hero-split">
+            <div class="hero-content">
+                <p class="category-tag">Mechatronics & Computer Vision</p>
+                <h1>Motion-Tracking Phone Holder</h1>
+                <p>An automated camera mount designed to track human movement using computer vision.</p>
+                
+                <div class="tag-cloud">
+                    <span class="tag">Python</span>
+                    <span class="tag">OpenCV</span>
+                    <span class="tag">Raspberry Pi</span>
+                    <span class="tag">Servo Motor</span>
+                    <span class="tag">Arduino</span>
+                    <span class="tag">SolidWorks</span>
                 </div>
 
-                <button onclick="window.location.href='GraphicHome.html'">GRAPHIC DESIGN</button>
+                <div class="spec-grid">
+                    <div class="spec-item">
+                        <label>Role</label>
+                        <span>Lead Mechanical Designer</span>
+                    </div>
+                    <div class="spec-item">
+                        <label>Timeline</label>
+                        <span>May – Aug 2025</span>
+                    </div>
+                </div>
             </div>
 
-            <div class="menu-icon" id="menuBtn">&#9776;</div>
-        </div>
-
-        <script>
-            document.getElementById("menuBtn").addEventListener("click", function() {
-                document.getElementById("navLinks").classList.toggle("show");
-            });
-        </script>
-
-        <div class="nav-container">
-            <a href="index.html">&#10094; Home</a>
-            <a href="LineCar.html"> Next &#10095;</a>
-        </div>
-
-        
-        <h3>Motion-Tracking Phone Holder</h3>
-
-        <div class="img-text-container">
-            <img class="center" src="PhoneMountNOBACK.png" alt="Phone Mount Picture">
-            <div class="txt-wrap">
-                <p><strong>May 2025 - August 2025</strong></p>
-                <p>This device automatically rotates to follow a moving subject. A phone can be mounted on top, while a webcam captures real-time subject position data. The data is processed through a computer vision algorithm and sent to an Arduino Uno, which controls a servo motor to adjust the rotation accordingly. I  designed the housing in SolidWorks and fabricated it with a combination of 3D-printed and laser-cut components.</p>
-                <p class="end">Inspired by ballroom dance culture, where dancers often record their performances, this prototype was developed under a self-imposed $100 budget. While the system currently tracks subjects within 6 ft with limited accuracy, it demonstrates a functional proof of concept.</p>
+            <div class="hero-img">
+                <img src="PortPhotos/phone-mount-noback.png" alt="Motion Tracking Phone Mount">
             </div>
-        </div>
+        </section>
 
-        <img class="size-photo" src="silab newsletter.png" alt="SILab Newsletter">
-            <div class="txt-wrap">
-                <p class="end"><strong>Recognized by Singh Imagineering Lab newsletter (September 2025)</strong></p>
-            </div>
+        <section class="details">
+            <h3>System Architecture</h3>
+            <p>The system uses a webcam to detect position via OpenCV. This data is sent via serial to an Arduino, actuating a high-torque servo motor.</p>
+        </section>
 
- 
-        <div class="box">
-            <h4>SKILLS</h4>
-            <ul class="custom-bul">
-                <li>SolidWorks</li>
-                <li>3D Printing</li>
-                <li>Laser Cutter</li>
-                <li>Gear Mechanics</li>
-                <li>Arduino Uno</li>
-                <li>Raspberry Pi</li>
-                <li>Servo Motor</li>
-                <li>Circuit</li>
-                <li>Assembly</li>
-                <li>Computer Vision</li>
-
-            </ul>
-        </div>
-
-        <h5>VIDEO DEMONSTRATION</h5>
-
-        <div class="center-vid">
-            <video class="vid" controls autoplay muted playsinline>
-                <source src="PhoneHolderDemoConverted.mp4" type="video/mp4">
+        <div class="media-wrap">
+            <video controls autoplay muted playsinline>
+                <source src="PortVids/PhoneHolderDemoConverted.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
 
-        <div class="nav-container">
-            <a href="index.html">&#10094; Home</a>
-            <a href="LineCar.html"> Next &#10095;</a>
-        </div>
-        
-    </body>
+        <section class="featured-section">
+            <div class="featured-content">
+                <span class="category-tag">Recognition</span>
+                <h3>Featured in Boston University College of Engineering BTEC-SILab Newsletter</h3>
+                
+                <div class="newsletter-box">
+                    <img src="PortPhotos/silab-news.png" alt="Newsletter Feature Clipping">
+                    <p class="feature-caption">Published in the Sept 2025 Edition of the BTEC-SILab Newsletter</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    
+
+    <footer class="nav-footer">
+        <a href="index.html">❮ Back to Home</a>
+        <a href="LineCar.html">Next Project ❯</a>
+    </footer>
+
+</body>
 </html>

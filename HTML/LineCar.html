@@ -4,59 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Line-Following Car | Doris Siu</title>
-    
-    <link rel="stylesheet" href="style.css">
+        
+    <link href="project-style.css" rel="stylesheet">
 </head> 
 
 <body>
-
+    
     <nav class="navbar">
         <a href="index.html" class="logo">D.S. Portfolio</a>
-
-        <input type="checkbox" id="nav-trigger" class="menu-toggle">
-        <label for="nav-trigger" class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
-
         <div class="nav-links">
             <a href="work.html">Experience</a>
             <a href="project.html">Project</a>
-            <a href="index.html#about">About</a>
-            <a href="contact.html" class="nav-contact">Contact</a>
+            <a href="#about">About</a>
         </div>
     </nav>
 
     <main class="container">
         <section class="hero-split">
             <div class="hero-content">
-                <p class="category-tag">Robotics & Controls</p>
                 <h1>Line-Following Car</h1>
-                <p>Collaborated in a 4-person team to design and build an autonomous line-following car weighing ~1 kg. The project focused on integrating sensor logic with mechanical stability. The housing the built out of arcylic and wood.</p>
+                <p>Collaborated in a 4-person team to design and build an autonomous line-following car weighing approximately 1 kg. The project focused on integrating sensor logic with mechanical stability.</p>
                 
                 <div class="tag-cloud">
                     <span class="tag">Arduino Uno</span>
-                    <span class="tag">IR Sensor</span>
-                    <span class="tag">Ultrasonic Sensor</span>
+                    <span class="tag">IR Sensors</span>
+                    <span class="tag">Ultrasonic</span>
                     <span class="tag">Onshape</span>
-                    <span class="tag">DC Motor</span>
                 </div>
 
                 <div class="spec-grid">
                     <div class="spec-item">
-                        <label>Role</label>
-                        <span>Lead Mechanical Designer</span>
-                    </div>
-                    <div class="spec-item">
                         <label>Timeline</label>
                         <span>Jan - May 2025</span>
+                    </div>
+                    <div class="spec-item">
+                        <label>Weight</label>
+                        <span>~1.0 kg</span>
+                    </div>
+                    <div class="spec-item">
+                        <label>Materials</label>
+                        <span>Acrylic & Wood</span>
                     </div>
                 </div>
             </div>
 
             <div class="hero-img">
-                <img src="PortPhotos/car-front-noback.png" alt="Car Prototype">
+                <img src="CarProtoNOBACK.png" alt="Car Prototype">
             </div>
         </section>
 
@@ -67,7 +60,7 @@
 
         <div class="media-wrap">
             <video controls autoplay muted playsinline>
-                <source src="PortVids/LineCarDemoConverted.mp4" type="video/mp4">
+                <source src="LineCarDemoConverted.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
@@ -77,6 +70,16 @@
         <a href="PhoneMount.html">❮ Previous Project</a>
         <a href="Truss.html">Next Project ❯</a>
     </footer>
+
+    <script>
+        // If you keep the menu-icon in the nav, this will handle the toggle
+        const menuBtn = document.getElementById("menuBtn");
+        if(menuBtn) {
+            menuBtn.addEventListener("click", function() {
+                document.getElementById("navLinks").classList.toggle("show");
+            });
+        }
+    </script>
 
 </body>
 </html>

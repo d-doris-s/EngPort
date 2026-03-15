@@ -1,119 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Phone Mount</title>
-        <link rel="stylesheet" href="Banner&body.css">
-        <link rel="stylesheet" href="ProjTextStyle.css">
-        <link rel="stylesheet" href="VerticalPresent.css">
-        <link rel="stylesheet" href="ArrowToNext.css">
-        <link rel="stylesheet" href="ProjBannerSelection.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truss Design | Doris Siu</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head> 
 
-        <style>
-            .center {
-                display: block;
-                width: 100%;
-                height: auto;
-                margin: auto;
-                max-width: 900px;
-            }
+<body>
 
-            .centerimg1 {
-                display: block;
-                max-width: 900px;
-                height: auto;
-                margin: auto;
-                padding: 40px 40px 0;
-            }
+    <nav class="navbar">
+        <a href="index.html" class="logo">D.S. Portfolio</a>
 
-            @media (max-width: 900px) {
-                .center {
-                    flex: 1 1 100%; 
-                    max-width: 550px;
-                }
-                .centerimg1 {flex: 1 1 100%; 
-                    max-width: 500px;}
-            }
+        <input type="checkbox" id="nav-trigger" class="menu-toggle">
+        <label for="nav-trigger" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
 
-        </style>
-    </head> 
+        <div class="nav-links">
+            <a href="work.html">Experience</a>
+            <a href="project.html">Project</a>
+            <a href="index.html#about">About</a>
+            <a href="contact.html" class="nav-contact">Contact</a>
+        </div>
+    </nav>
 
-    <body>
-        <div class="proj-banner">
-            <a href="index.html">D.S. Portfolio</a>
-
-            <div class="banner-btn" id="navLinks">
-                <button onclick="window.location.href='index.html'">HOME</button>
-             
-                <div class="banner-dropdown">
-                    <button>PROJECTS &#9660;</button>
-                    <div class="dropdown-content">
-                        <a href="PhoneMount.html">Motion-Tracking Phone Holder</a>
-                        <a href="LineCar.html">Line-Following Car</a>
-                        <a href="Truss.html">Truss Design</a>
-                        <a href="TempSensor.html">Temperature Sensor</a>
-                        <a href="SkillDev.html">Miscellaneous Projects</a>
-                    </div>
+    <main class="container">
+        <section class="hero-split">
+            <div class="hero-content">
+                <p class="category-tag">Structural Engineering</p>
+                <h1>Truss Design & Optimization</h1>
+                <p>Designed and optimized a truss structure to maximize load capacity while maintaining a budget under $300. Using a MATLAB algorithm for force analysis, the final design held 60.58 oz of load (0.2794 oz/$), achieving a 79.3% increase in capacity compared to the initial prototype.</p>
+                
+                <div class="tag-cloud">
+                    <span class="tag">MATLAB</span>
+                    <span class="tag">Force Analysis</span>
+                    <span class="tag">Optimization</span>
+                    <span class="tag">Testing</span>
                 </div>
 
-                <button onclick="window.location.href='GraphicHome.html'">GRAPHIC DESIGN</button>
+                <div class="spec-grid">
+                    <div class="spec-item">
+                        <label>Role</label>
+                        <span>Structural Designer</span>
+                    </div>
+                    <div class="spec-item">
+                        <label>Timeline</label>
+                        <span>Sept - Dec 2024</span>
+                    </div>
+                </div>
             </div>
 
-            <div class="menu-icon" id="menuBtn">&#9776;</div>
-        </div>
-
-        <script>
-            document.getElementById("menuBtn").addEventListener("click", function() {
-                document.getElementById("navLinks").classList.toggle("show");
-            });
-        </script>
-
-        <div class="nav-container">
-            <a href="LineCar.html">&#10094; Previous</a>
-            <a href="TempSensor.html"> Next &#10095;</a>
-        </div>
-        
-        <h3>Truss Design</h3>
-
-        <img class="center" src="Trussyoo.png" alt="Acrylic Truss Picture">
-           
-        <div class="txt-wrap">
-            <p><strong>September 2024 - December 2024</strong></p>
-            <div class="center-txt">
-                <p class="end">Designed and optimized a truss structure to maximize load capacity while maintaining a budget under $300, using a MATLAB algorithm for force analysis and iterative improvement. The final design met expectations, achieving a 76.95% increase in load capacity from the initial design and supporting 1.6 kg, while also improving the load-to-cost ratio to 0.2794 oz/$ from 0.1579 oz/$ initially. Efficient material selection and cost management left one-third of the budget unused, indicating potential for further optimization. </p>
+            <div class="hero-img">
+                <img src="PortPhotos/truss-noback.png" alt="Acrylic Truss Structure">
             </div>
-        </div>
-            
-            
-        <div class="box">
-            <h4>SKILLS</h4>
-            <ul class="custom-bul">
-                <li>MATLAB</li>
-                <li>Force Analysis</li>
-                <li>Optimization</li>
-                <li>Teamwork</li>
-                <li>Truss Design</li>
-                <li>Technical Documentation</li>
-                <li>Deflection Testing</li>
+        </section>
 
-            </ul>
+        <section class="details">
+            <h3>Iterative Design Process</h3>
+            <p>The project involved creating a computational model to predict buckling and member failure. By identifying the critical member (highlighted in the diagram below), I was able to redistribute material effectively, leaving one-third of the budget unused while still exceeding performance targets.</p>
+        </section>
+
+        <div class="media-wrap" style="background: white; padding: 20px;">
+            <img src="PortPhotos/truss-paper-design.png" alt="Technical Truss Diagram" style="width: 100%; height: auto; display: block;">
         </div>
 
-        <div class="centerimg1">
-            <img src="TrussDesignProcess.png" 
-                alt="Manual Truss Design Process Picture"
-                style="width: 100%; height: 100%;">
-        </div>
+        <section class="details">
+            <p style="font-size: 0.9rem; color: #6e6e73; text-align: center;">
+                <em>Labled model: Member numbers (1-15), joint letters (A-I), and failure point analysis.</em>
+            </p>
+        </section>
+    </main>
 
-        <div class="center-txt">
-            <p class="end"><strong>Manually designed and computationally tested final truss model. The diagram is labeled with member numbers (1 to 15), joint letters (A to I), applied force F, important dimensions, and the first member to buckle highlighted in red.</strong></p>
-        </div>
+    <footer class="nav-footer">
+        <a href="LineCar.html">❮ Previous Project</a>
+        <a href="TempSensor.html">Next Project ❯</a>
+    </footer>
 
-        <div class="nav-container">
-            <a href="LineCar.html">&#10094; Previous</a>
-            <a href="TempSensor.html"> Next &#10095;</a>
-        </div>
-
-    </body>
+</body>
 </html>

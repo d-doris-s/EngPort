@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truss Design Optimization | Doris Siu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg: #ffffff;
+            --text: #1a1a1a;
+            --accent: #007AFF;
+            --light-gray: #fbfbfd;
+            --border: #e5e5e7;
+            --success: #34c759;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            color: var(--text);
+            line-height: 1.6;
+            background: var(--bg);
+        }
+
+        /* Navigation */
+        .proj-banner {
+            display: flex;
+            justify-content: space-between;
+            padding: 1.5rem 5%;
+            border-bottom: 1px solid var(--border);
+            font-weight: 600;
+        }
+        .proj-banner a { text-decoration: none; color: var(--text); }
+
+        /* Hero Section */
+        .hero-truss {
+            padding: 4rem 5%;
+            text-align: center;
+            background: linear-gradient(to bottom, #f8f9fa, #ffffff);
+        }
+
+        .hero-truss h1 {
+            font-size: 3rem;
+            letter-spacing: -1.5px;
+            margin-bottom: 2rem;
+        }
+
+        .hero-img-wrap {
+            max-width: 900px;
+            margin: 0 auto;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+        }
+
+        .hero-img-wrap img { width: 100%; display: block; }
+
+        /* Data Visualization Bar */
+        .metrics-bar {
+            display: flex;
+            justify-content: center;
+            gap: 4rem;
+            padding: 3rem 5%;
+            background: white;
+        }
+
+        .metric { text-align: center; }
+
+        .metric .value {
+            display: block;
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: var(--accent);
+            letter-spacing: -1px;
+        }
+
+        .metric .label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #888;
+            font-weight: 600;
+        }
+
+        /* Content Sections */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 5% 5rem;
+        }
+
+        .analysis-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 3rem;
+            align-items: center;
+            margin-top: 4rem;
+        }
+
+        .diagram-box {
+            background: var(--light-gray);
+            padding: 2rem;
+            border-radius: 24px;
+            border: 1px solid var(--border);
+        }
+
+        .diagram-box img { width: 100%; height: auto; border-radius: 8px; }
+
+        /* Skills Chips */
+        .tag-container {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            margin-top: 1rem;
+        }
+
+        .tag {
+            background: var(--text);
+            color: white;
+            padding: 0.5rem 1.2rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .footer-nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 4rem 5%;
+            border-top: 1px solid var(--border);
+        }
+
+        .footer-nav a { text-decoration: none; color: var(--accent); font-weight: 600; }
+
+        @media (max-width: 800px) {
+            .metrics-bar { flex-direction: column; gap: 2rem; }
+            .analysis-grid { grid-template-columns: 1fr; }
+            .hero-truss h1 { font-size: 2.2rem; }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="proj-banner">
+        <a href="index.html">D.S. Portfolio</a>
+        <div>
+            <a href="index.html" style="margin-right: 15px;">Work</a>
+            <a href="GraphicHome.html">Design</a>
+        </div>
+    </nav>
+
+    <header class="hero-truss">
+        <p class="label" style="color: var(--accent); font-weight: 600; letter-spacing: 2px;">STRUCTURAL OPTIMIZATION</p>
+        <h1>Truss Design Analysis</h1>
+        <div class="hero-img-wrap">
+            <img src="Trussyoo.png" alt="Acrylic Truss Structure">
+        </div>
+    </header>
+
+    <section class="metrics-bar">
+        <div class="metric">
+            <span class="value">+76.9%</span>
+            <span class="label">Load Capacity Increase</span>
+        </div>
+        <div class="metric">
+            <span class="value">0.279</span>
+            <span class="label">Load-to-Cost Ratio (oz/$)</span>
+        </div>
+        <div class="metric">
+            <span class="value">33%</span>
+            <span class="label">Budget Surplus</span>
+        </div>
+    </section>
+
+    <main class="container">
+        <div class="analysis-grid">
+            <div class="diagram-box">
+                <img src="TrussDesignProcess.png" alt="Computational Analysis Diagram">
+                <p style="font-size: 0.8rem; color: #666; margin-top: 1rem; text-align: center;">Computational failure analysis identifying critical buckling points.</p>
+            </div>
+            <div>
+                <h3>The Optimization Logic</h3>
+                <p>Using a <strong>MATLAB algorithm</strong> for iterative force analysis, I optimized the member geometry to shift the failure point. By simulating load distribution across 15 members and 9 joints, we identified the specific member prone to buckling (highlighted in red) and reinforced it without exceeding the $300 budget.</p>
+            </div>
+        </div>
+
+        <div class="tag-container">
+            <h4 class="label">Technical Competencies</h4>
+            <div class="tags">
+                <span class="tag">MATLAB</span>
+                <span class="tag">Static Force Analysis</span>
+                <span class="tag">Buckling Theory</span>
+                <span class="tag">Computational Testing</span>
+                <span class="tag">Cost Management</span>
+                <span class="tag">Deflection Testing</span>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer-nav">
+        <a href="LineCar.html">← Previous: Line-Following Car</a>
+        <a href="TempSensor.html">Next: Temperature Sensor →</a>
+    </footer>
+
+</body>
+</html>

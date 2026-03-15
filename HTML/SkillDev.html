@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill Development | Doris Siu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg: #ffffff;
+            --text: #1a1a1a;
+            --accent: #5d3592; /* Your signature purple */
+            --light-purple: #f8f6fb;
+            --border: #e5e5e7;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            color: var(--text);
+            line-height: 1.6;
+            background: var(--bg);
+        }
+
+        /* Navigation */
+        .proj-banner {
+            display: flex;
+            justify-content: space-between;
+            padding: 1.5rem 5%;
+            border-bottom: 1px solid var(--border);
+            background: white;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .proj-banner a { text-decoration: none; color: var(--text); font-weight: 600; }
+
+        .header-section {
+            padding: 4rem 5% 2rem;
+            text-align: center;
+            background: var(--light-purple);
+        }
+
+        .header-section h1 {
+            font-size: 2.5rem;
+            letter-spacing: -1px;
+            color: var(--accent);
+            margin: 0;
+        }
+
+        /* Project Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2.5rem;
+            padding: 4rem 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .skill-card {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(93, 53, 146, 0.1);
+        }
+
+        .card-img {
+            height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #fdfdfd;
+            padding: 1.5rem;
+        }
+
+        .card-img img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        .card-content {
+            padding: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .card-content h3 {
+            margin: 0 0 0.5rem;
+            font-size: 1.25rem;
+            color: var(--accent);
+        }
+
+        .card-content p {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Skill Tags */
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .tag {
+            font-size: 0.75rem;
+            background: var(--light-purple);
+            color: var(--accent);
+            padding: 0.3rem 0.8rem;
+            border-radius: 100px;
+            font-weight: 600;
+            border: 1px solid rgba(93, 53, 146, 0.1);
+        }
+
+        .footer-nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 4rem 5%;
+            border-top: 1px solid var(--border);
+        }
+
+        .footer-nav a { text-decoration: none; color: var(--accent); font-weight: 600; }
+
+        @media (max-width: 600px) {
+            .skills-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="proj-banner">
+        <a href="index.html">D.S. Portfolio</a>
+        <div>
+            <a href="index.html" style="margin-right: 15px;">Work</a>
+            <a href="GraphicHome.html">Design</a>
+        </div>
+    </nav>
+
+    <header class="header-section">
+        <h1>Skill Development</h1>
+        <p>A collection of technical explorations in fabrication, code, and CAD.</p>
+    </header>
+
+    <main class="skills-grid">
+        
+        <article class="skill-card">
+            <div class="card-content" style="background: var(--accent); color: white; padding: 3rem 1.5rem;">
+                <h3 style="color: white;">Portfolio Website</h3>
+                <p style="color: rgba(255,255,255,0.8);">Full-site architecture and responsive UI design.</p>
+                <div class="tags">
+                    <span class="tag" style="background: rgba(255,255,255,0.2); color: white;">HTML5/CSS3</span>
+                    <span class="tag" style="background: rgba(255,255,255,0.2); color: white;">JavaScript</span>
+                    <span class="tag" style="background: rgba(255,255,255,0.2); color: white;">UI/UX</span>
+                </div>
+            </div>
+        </article>
+
+        <article class="skill-card">
+            <div class="card-img"><img src="CatapultNOBACK.png" alt="Catapult"></div>
+            <div class="card-content">
+                <h3>Spring-Loaded Catapult</h3>
+                <p>Mechanical assembly using wood and high-tension springs for projectile testing.</p>
+                <div class="tags">
+                    <span class="tag">NC Mill</span>
+                    <span class="tag">Bandsaw</span>
+                    <span class="tag">Fasteners</span>
+                </div>
+            </div>
+        </article>
+
+        <article class="skill-card">
+            <div class="card-img"><img src="GuitarStandNOBACK.png" alt="Guitar Stand"></div>
+            <div class="card-content">
+                <h3>Guitar Stand</h3>
+                <p>Custom woodworking project designed for half-size acoustic instruments.</p>
+                <div class="tags">
+                    <span class="tag">Woodworking</span>
+                    <span class="tag">Bandsaw</span>
+                    <span class="tag">Belt Sander</span>
+                </div>
+            </div>
+        </article>
+
+        <article class="skill-card">
+            <div class="card-img" style="background: #fff;"><img src="CADex.png" alt="Technical Drawing"></div>
+            <div class="card-content">
+                <h3>Technical Drafting</h3>
+                <p>Geometric dimensioning and tolerancing (GD&T) for industrial components.</p>
+                <div class="tags">
+                    <span class="tag">SolidWorks</span>
+                    <span class="tag">GD&T</span>
+                    <span class="tag">Drafting</span>
+                </div>
+            </div>
+        </article>
+
+    </main>
+
+    <footer class="footer-nav">
+        <a href="TempSensor.html">← Previous: Temperature Sensor</a>
+        <a href="index.html">Back to Home →</a>
+    </footer>
+
+</body>
+</html>
